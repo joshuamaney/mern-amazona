@@ -16,10 +16,9 @@ function Product(props) {
         </Link>
         <Rating rating={product.rating} numReviews={product.numReviews} />
         <Card.Text>${product.price}</Card.Text>
-        <Button>Add to Cart</Button>
+        <Button id="btn-primary">Add to cart</Button>
       </Card.Body>
     </Card>
   );
 }
-
 export default Product;
