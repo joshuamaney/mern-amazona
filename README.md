@@ -45,5 +45,10 @@
     ii. create Product component
     iii. Use Rating component in Product component
 12. Create Product Details Screen
-13. fetch product from backend
-14. create 3 columns for image, info, and action
+    i. fetch product from backend
+    ii. create 3 columns for image, info, and action
+13. Create Loading and Message Component
+    i. create loading component
+    ii. use spinner component
+    iii. create message component
+    iv. create utils.js to define getError function
