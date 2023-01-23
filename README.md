@@ -44,3 +44,6 @@
     i. create Rating component
     ii. create Product component
     iii. Use Rating component in Product component
+12. Create Product Details Screen
+13. fetch product from backend
+14. create 3 columns for image, info, and action
