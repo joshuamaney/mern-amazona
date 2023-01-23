@@ -52,3 +52,8 @@
     ii. use spinner component
     iii. create message component
     iv. create utils.js to define getError function
+14. Implement Add To Cart
+    i. Create React Context
+    ii. define reducer
+    iii. create store provider
+    iv. implement add to cart button click handler
