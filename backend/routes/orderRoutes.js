@@ -25,7 +25,7 @@ orderRouter.post(
 
 //must come before get/:id, otherwise /mine handled by id api instead of this api
 orderRouter.get(
-  '/:mine',
+  '/mine',
   isAuth,
   expressAsyncHandler(async (req, res) => {
     const orders = await Order.find({ user: req.user._id });
