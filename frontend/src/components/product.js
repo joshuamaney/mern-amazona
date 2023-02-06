@@ -50,4 +50,4 @@ function Product(props) {
     </Card>
   );
 }
-export default Product();
+export default Product;
