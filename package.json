@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/joshuamaney/mern-amazona#readme",
   "dependencies": {
-    "node": "19.x"
+    "node": "^19.6.0"
   }
 }
