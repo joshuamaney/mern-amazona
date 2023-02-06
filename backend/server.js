@@ -6,7 +6,7 @@ import seedRouter from './routes/seedRoutes.js';
 import productRouter from './routes/productRoutes.js';
 import userRouter from './routes/userRoutes.js';
 import orderRouter from './routes/orderRoutes.js';
-dotenv.config();
+require('dotenv').config();
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
@@ -35,7 +35,7 @@ app.get('*', (req, res) =>
 app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
 });
-const port = process.env.PORT || 5002;
-app.listen(port, () => {
-  console.log(`serve at http://localhost:${port}`);
+const PORT = process.env.PORT || 5002;
+app.listen(PORT, () => {
+  console.log(`serve at http://localhost:${PORT}`);
 });
