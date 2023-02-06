@@ -6,7 +6,7 @@ import axios from 'axios';
 import { useContext } from 'react';
 import { Store } from '../Store';
 
-function Product(props) {
+export default function Product(props) {
   const { product } = props;
 
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -50,4 +50,4 @@ function Product(props) {
     </Card>
   );
 }
-export default Product;
+// export default Product();
