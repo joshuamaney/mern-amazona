@@ -27,6 +27,7 @@ function Product(props) {
       payload: { ...item, quantity },
     });
   };
+
   return (
     <Card>
       <Link to={`/product/${product.slug}`}>
@@ -40,12 +41,10 @@ function Product(props) {
         <Card.Text>${product.price}</Card.Text>
         {product.countInStock === 0 ? (
           <Button variant="light" disabled>
-            Out of Stock
+            Out of stock
           </Button>
         ) : (
-          <Button onClick={() => addToCartHandler(product)} id="btn-primary">
-            Add to cart
-          </Button>
+          <Button onClick={() => addToCartHandler(product)}>Add to cart</Button>
         )}
       </Card.Body>
     </Card>
